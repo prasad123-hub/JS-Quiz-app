@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-div {
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex;
+  align-items: center; */
+  padding: 220px 0;
+}
+
+.inner-div {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px 120px;
+  border-radius: 20px;
+}
+
+.inner-div h2 {
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  text-align: left;
+  margin: 20px 20px;
+}
+
+#submit {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3944f7;
+  color: white;
+  cursor: pointer;
+}
+
+#showScore {
+  background-color: #555;
+  margin-top: 30px;
+  padding: 30px 40px;
+  color: chartreuse;
+  border-radius: 5px;
+}
+
+.scoreArea {
+  display: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3944f7;
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
