@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Quiz App</title>
-  </head>
-  <body>
-    <div class="main-div">
-      <div class="inner-div">
-        <h2 class="question">Question Here</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="answer"
-              id="ans1"
-              class="answer"
-              autoCheck="false"
-            />
-            <label for="ans1" id="option1">Question</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="answer"
-              id="ans2"
-              class="answer"
-              autoCheck="false"
-            />
-            <label for="ans2" id="option2">Question</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="answer"
-              id="ans3"
-              class="answer"
-              autoCheck="false"
-            />
-            <label for="ans3" id="option3">Question</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="answer"
-              id="ans4"
-              class="answer"
-              autoCheck="false"
-            />
-            <label for="ans4" id="option4">Question</label>
-          </li>
-        </ul>
-        <button id="submit">Submit</button>
-        <div id="showScore" class="scoreArea"></div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question
+                    </p>
+                    <h1 class="hud-main-text" id="questionCounter">
+                        
+                    </h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">Question here</h2>
+            <div class="choice-container">
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
     </div>
-
+        
+    <div id="result"></div>
+    <div class="restart" id="again"></div>
+   
     <script src="script.js"></script>
-  </body>
-</html>
+
+</body>
+</html> 
